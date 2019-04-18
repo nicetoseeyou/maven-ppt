@@ -1,0 +1,27 @@
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+	<!-- id should same as the artifactId -->
+	<id>quickstart</id>
+	<!-- 是否可以通过 archetype:generate 命令在已经存在的项目中创建一个新的module -->
+	<allowPartial>true</allowPartial>
+	<!-- src/main/java -->
+	<sources>
+		<source>src/main/java/App.java</source>
+	</sources>
+	<!-- src/main/resources -->
+	<resources>
+		<resource>src/main/resources/logback.xml</resource>
+	</resources>
+	<!-- src/test/java -->
+	<testSources>
+		<source>src/test/java/AppTest.java</source>
+	</testSources>
+	<!-- src/test/resources -->
+	<testResources>
+		<resource>src/test/resources/logback.xml</resource>
+	</testResources>
+	<!-- src/site -->
+	<siteResources>
+		<resource>src/site/xxx</resource>
+	</siteResources>
+</archetype>
